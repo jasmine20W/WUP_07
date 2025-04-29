@@ -52,8 +52,13 @@ The amount of females who got COVID and lived than males. However, out of the on
   
   
 ## Numerical results
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
 
-
+Out of the alive group, 12% more women than men survived. Out of the dead group, about 30% more men than women died. 98.7% of females lives, while 1.4% of them died. 97% of men lived, while 3% of the men died. Percentage wise, COVID killed about twice the amount of men than it did women. 
 ## Inferential results 
 
 
